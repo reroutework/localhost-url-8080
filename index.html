@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body onload="run()">
+
+<noscript>
+      You need to enable JavaScript to Redirect.
+</noscript>
+
+<script>
+function run() {
+  path = window.location.pathname;
+  index = window.location.href.indexOf("?");
+  params = index > -1 ? window.location.href.substring(index) : "";
+
+  window.location.replace("http://localhost:8080"+path+params);
+}
+</script>
+
+</body>
+</html>
