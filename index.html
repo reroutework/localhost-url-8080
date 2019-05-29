@@ -20,7 +20,9 @@ function run() {
   index = window.location.href.indexOf("?");
   params = index > -1 ? window.location.href.substring(index) : "";
 console.log(params);
-  window.location.replace("http://localhost:8080"+path+params);
+      newLocation = "http://localhost:8080"+path+params;
+      console.log(newLocation);
+  //window.location.replace("http://localhost:8080"+path+params);
 }
 </script>
 
